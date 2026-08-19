@@ -176,6 +176,57 @@ section.page-section h2 {
   margin-bottom: 16px;
 }
 
+/* Callout row (multiple callout-links side by side) */
+.callout-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.callout-row .callout-link {
+  margin-top: 0;
+}
+
+/* Skills map (used to render README content on AI Security page) */
+.skill-block {
+  margin-bottom: 36px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--border);
+}
+.skill-block:last-child {
+  border-bottom: none;
+}
+.skill-block h2 {
+  font-size: 18px;
+  margin: 0 0 6px 0;
+  color: var(--text);
+}
+.skill-block .skill-intro {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 0 14px 0;
+  line-height: 1.6;
+}
+ul.skill-entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+ul.skill-entries li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text);
+  padding-left: 14px;
+  border-left: 2px solid var(--border);
+}
+ul.skill-entries li strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 footer.site-footer {
   margin-top: 56px;
   color: var(--muted);
